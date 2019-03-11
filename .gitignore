@@ -6,3 +6,4 @@ thinkphp
 /runtime
 */config.php
 */database.php
+.DS_Store
