@@ -4,5 +4,5 @@ composer.lock
 thinkphp
 /vendor
 /runtime
-config.php
-database.php
+*/config.php
+*/database.php
