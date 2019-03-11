@@ -1,0 +1,577 @@
+html body {
+	margin-top: 61px;
+}
+
+body {
+	line-height: 24px;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+    background-color: #ccc;
+}
+
+a cite {
+	font-style: normal;
+}
+
+.fly-badge {
+	height: 20px;
+	line-height: 20px;
+	padding: 0 6px;
+	border-radius: 2px;
+	font-size: 12px;
+	position: relative;
+	display: inline-block;
+}
+
+.fly-bg-red {
+	background-color: #FF5722!important;
+	color: #fff;
+}
+
+.fly-bg-green {
+	background-color: #009688!important;
+	color: #fff;
+}
+
+.hr_15 {
+	height: 15px;
+}
+
+.fly-container {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+/*fly-row*/
+.fly-col-space15 {
+	margin:-7.5px;
+}
+
+.fly-col-space15 > * {
+	padding:7.5px;
+}
+
+.fly-col-md8 {
+	width: 63%;
+	float: left;
+}
+
+.fly-header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 10000;
+	border-bottom: 1px solid #404553
+}
+
+.fly-header .fly-nav {
+	background: none;
+}
+
+.fly-nav-user {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.fly-nav .fly-nav-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 60px;
+}
+
+.fly-nav .fly-nav-item a{
+	display: block;
+	padding: 0 20px;
+	color:#fff;
+}
+
+
+
+.fly-pannel {
+	margin-bottom: 15px;
+	border-radius: 2px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+	padding: 20px;
+}
+
+/*.fly-list*/
+.fly-list li {
+	position: relative;
+	height: 45px;
+	line-height: 22px;
+	padding: 15px 15px 15px 75px;
+	border-bottom: 1px dotted #e2e2e2;
+} 
+
+.fly-avatar {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+
+.fly-list li h2 {
+	height: 26px;
+	font-size: 0;
+}
+
+.fly-list li h2 a {
+	display: inline-block;
+	max-width: 80%;
+	padding-right: 10px;
+	font-size: 16px;
+}
+
+.fly-list li h2 .fly-badge {
+	position: relative;
+	top: -2px;
+	height: 16px;
+	line-height: 16px;
+	padding: 0 5px;
+	margin-right: 10px;
+	font-size: 12px;
+	border:1px solid #5FB878;
+	background: none;
+	color: #5FB878;
+}
+
+.fly-list-info {
+	position: relative;
+	font-size: 13px;
+	color: #999;
+}
+
+.fly-list-info a[link] {
+	color: #999;
+}
+
+.fly-list-info > * {
+	padding-right: 15px;
+}
+
+.fly-list-nums {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-right: 0 !important;
+}
+
+.fly-list-nums i {
+	background: url(../images/huida.png);
+	background-size: 13px 13px;
+	display: inline-block;
+	position: relative;
+	width: 13px;
+	height: 13px;
+	top: 2px;
+}
+
+.fly-list-badge {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	font-size: 0;
+}
+
+.fly-list-badge .fly-badge {
+	margin-left: 5px;
+	border-radius: 2px;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.fly-col-md4 {
+	width: 33%;
+	float: left;
+}
+
+.fly-pannel-title {
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 15px;
+	border-bottom: 1px dotted #E9E9E9;
+	color: #333;
+	border-radius: 2px 2px 0 0;
+	font-size: 14px;
+}
+
+.fly-mid {
+	display: inline-block;
+	height: 10px;
+	width: 1px;
+	margin:0 10px;
+	vertical-align: middle;
+	background-color: #e2e2e2;
+}
+
+.fly-link {
+	color: #01AAED;
+}
+
+.fly-pannel-main {
+	position: relative;
+	height: 38px;
+	padding:24px;
+	text-align: center;
+}
+
+.fly-column {
+	height: 50px;
+	line-height: 50px;
+}
+
+.fly-column ul li {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+}
+
+.fly-column ul li a {
+	padding: 0 20px;
+}
+
+.fly-column-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.fly-column-right span {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	background: url(../images/search.png);
+	cursor: pointer;
+}
+
+.fly-tab {
+	margin:10px 0;
+	text-align: left!important;
+}
+
+.fly-tab-title {
+	position: relative;
+	left: 0;
+	height: 40px;
+	white-space: nowrap;
+	border-bottom: 1px solid #ccc;
+}
+
+.fly-tab-title li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	position: relative;
+	line-height: 40px;
+	min-width: 65px;
+	padding: 0 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.fly-tab-content {
+	overflow: hidden;
+	padding: 20px 0;
+}
+
+.fly-tab-title .fly-this {
+	color: #009688;
+	position: relative;
+}
+
+.fly-tab-title .fly-this:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: '';
+	width: 100%;
+	height: 41px;
+	border-bottom:2px solid #5FB878;
+
+}
+
+.fly-form-item {
+	margin-bottom: 15px;
+	clear: both;
+	overflow: hidden;
+}
+
+.fly-form-select input{
+	display: none;
+}
+
+.fly-form-select span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/weixuanzhong.png);
+	background-size: 16px 16px;
+}
+
+.fly-form-select input:checked + span {
+	background: url(../images/xuanzhong.png);
+	background-size: 16px 16px;
+}
+
+.fly-form-label {
+	width: 110px;
+	padding: 8px 15px;
+	height: 38px;
+	line-height: 20px;	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	border-radius: 2px 0 0 2px;
+	text-align: center;
+	background-color: #fbfbfb;
+	overflow: hidden;
+	box-sizing: border-box;
+	float: left;
+}
+
+.fly-input-inline {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: -1px;
+}
+
+.fly-form-item .fly-input-inline {
+	float: left;
+	width: 190px;
+	margin-right: 10px;
+}
+
+.fly-input {
+	display: block;
+	width: 100%;
+	border-radius: 0 2px 2px 0;
+	padding-left: 10px;
+	height: 38px;
+	border:1px solid #ccc;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+.fly-input-tips {
+	float: left;
+	display: block;
+	padding: 9px 0!important;
+	line-height: 20px;
+	margin-right: 10px;
+}
+
+.fly-verify-code {
+	position: relative;
+	margin-top: -12px;
+	cursor: pointer;
+}
+
+.fly-btn {
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 18px;
+	background-color: #009688;
+	color: #fff;
+	white-space: nowrap;
+	text-align: center;
+	font-size: 14px;
+	border:none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.fly-form-app {
+	margin-top: 30px;
+}
+
+.fly-form-app .icon-qq {
+	color: #7CA9C9;
+}
+
+.fly-form-app .icon-wechart {
+	color: green;
+}
+
+.fly-form-app .iconfont {
+	font-size: 26px;
+	padding: 0 5px;
+}
+
+.fly-footer {
+	margin: 50px 0 0;
+	padding: 20px 0 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #737573;
+	border-top: 1px solid #e2e2e2;
+}
+
+.detail-box {
+	padding: 20px;
+}
+
+.detail h1 {
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.fly-detail-info {
+	position: relative;
+	margin:10px 0 15px;
+}
+
+.detail-about {
+	position: relative;
+	line-height: 20px;
+	padding: 15px 15px 15px 75px;
+	font-size: 13px;
+	background-color: #f8f8f8;
+	color: #999;
+}
+
+.detail-body {
+	margin:20px 0 0;
+	min-height: 306px;
+	line-height: 26px;
+	color: #333;
+	word-wrap: break-word;
+}
+
+.fly-elem-field {
+	padding: 0;
+	margin-bottom: 10px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.fly-elem-title {
+	margin:10px 0 20px;
+	border-width: 1px 0 0;
+}
+
+.fly-elem-field legend {
+	margin-left: 20px;
+	padding: 0 10px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.jieda {
+	margin-bottom: 30px;
+}
+
+.jieda > li {
+	position: relative;
+	padding: 20px 0 1px;
+	border-bottom: 1px dotted #DFDFDF;
+}
+
+.detail-about-reply {
+	padding: 0 0 0 55px;
+	background: none;
+}
+
+.detail-about-reply .fly-avatar {
+	left: 0;
+	top: 0;
+}
+
+.fly-detail-user {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.detail-hits {
+	position: relative;
+	top: 5px;
+	line-height: 20px;
+}
+
+.jieda-body {
+	margin:25px 0 20px;
+	min-height: 0;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+.jieda-replay {
+	position: relative;
+}
+
+.jieda-replay span {
+	padding-right: 20px;
+	color: #999;
+	cursor: pointer;
+}
+
+.jieda-replay span em {
+	font-style: normal;
+}
+
+.jieda-zan .iconfont {
+	background: url(../images/zan.png);
+	background-size: 13px 13px;
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+}
+
+.jieda-replay .reply .iconfont {
+	background: url(../images/huida.png);
+	background-size: 13px 13px;
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+}
+
+/**响应式设置**/
+@media screen and (min-width: 1920px) {
+	.fly-container {
+		width: 1880px;
+	}
+}
+
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+	.fly-container {
+		width: 1650px;
+	}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+	.fly-container {
+		width: 1400px;
+	}
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+	.fly-container {
+		width:1330px;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1365px) {
+	.fly-container {
+		width: 1170px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.fly-container {
+		width: 970px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	.fly-container {
+		width: 750px;
+	}
+}
