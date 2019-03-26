@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>登录-Fly-golang+php学习社区</title>
+    <link rel="stylesheet" href="__CSS__/css/init.css">
+    <link rel="stylesheet" href="__CSS__/css/common.css">
+    <link rel="stylesheet" href="__CSS__/css/icon-font/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/css/style.css">
+</head>
+<body>
+<div class="fly-header fly-bg-black">
+    <div class="fly-container">
+        <div class="fly-logo">
+            <a href="{:url('Index/index')}">FLY社区</a>
+        </div>
+        <ul class="fly-nav fly-nav-user">
+            <li class="fly-nav-item">
+                <a href="#"><span class="iconfont">&#xe62e;</span></a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="{:url('Index/login')}">
+                    登入
+                </a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="{:url('Index/register')}">
+                    注册
+                </a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="#"><span class="icon iconfont">&#xe65d;</span></a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="#"><span class="icon iconfont">&#xe600;</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="hr_15"></div>
+<div class="fly-container">
+    <div class="fly-pannel">
+        <div class="fly-tab">
+            <ul class="fly-tab-title">
+                <li class="fly-this">登入</li>
+                <li><a href="{:url('Index/register')}">注册</a></li>
+            </ul>
+            <div class="fly-tab-content">
+                <div class="fly-tab-item">
+                    <div class="fly-form">
+                        <form action="#" method="post">
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">手机/邮箱</label>
+                                <div class="fly-input-inline">
+                                    <input type="text" name="username" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips"> 使用手机或者邮箱中的任意一个均可（若采用手机，请确保你的帐号已绑定过该手机） </div>
+                            </div>
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">密码</label>
+                                <div class="fly-input-inline">
+                                    <input type="text" name="username" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips">  </div>
+                            </div>
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">图形码</label>
+                                <div class="fly-input-inline">
+                                    <input type="text" name="username" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips">
+                                    <img src="" alt="验证码" class="fly-verify-code">
+                                </div>
+                            </div>
+                            <div class="fly-form-item">
+                                <button class="fly-btn">立即登录</button>
+                                <span><a href="#">忘记密码？</a></span>
+                            </div>
+
+                            <div class="fly-form-item fly-form-app">
+                                <span>或者使用社交账号登入</span>
+                                <a href="#" class="icon-wechart"><span class="icon iconfont">&#xe65d;</span></a>
+                                <a href="#" class="icon-qq"><span class="icon iconfont">&#xe600;</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fly-footer">
+    <p>
+        <a href="#">Fly 团队</a>
+        &copy; 2019
+        <a href="#">www.tydexp.cn</a>
+    </p>
+</div>
+</body>
+</html>

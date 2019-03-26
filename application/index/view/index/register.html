@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册-Fly-golang+php学习社区</title>
+    <link rel="stylesheet" href="__CSS__/css/init.css">
+    <link rel="stylesheet" href="__CSS__/css/common.css">
+    <link rel="stylesheet" href="__CSS__/css/icon-font/iconfont.css">
+    <link rel="stylesheet" href="__CSS__/css/style.css">
+</head>
+<body>
+<div class="fly-header fly-bg-black">
+    <div class="fly-container">
+        <div class="fly-logo" >
+            <a href="{:url('Index/index')}">FLY社区</a>
+        </div>
+        <ul class="fly-nav fly-nav-user">
+            <li class="fly-nav-item">
+                <a href="#"><span class="iconfont">&#xe62e;</span></a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="{:url('Index/login')}">
+                    登入
+                </a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="{:url('Index/register')}">
+                    注册
+                </a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="#"><span class="icon iconfont">&#xe65d;</span></a>
+            </li>
+            <li class="fly-nav-item">
+                <a href="#"><span class="icon iconfont">&#xe600;</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="hr_15"></div>
+<div class="fly-container">
+    <div class="fly-pannel">
+        <div class="fly-tab">
+            <ul class="fly-tab-title">
+                <li><a href="{:url('Index/login')}">登入</a></li>
+                <li class="fly-this">注册</li>
+            </ul>
+            <div class="fly-tab-content">
+                <div class="fly-tab-item">
+                    <div class="fly-form">
+                        <form action="{:url('Index/register')}" method="post" id="register">
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">手机</label>
+                                <div class="fly-input-inline">
+                                    <input type="text" name="mobile" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips"> </div>
+                            </div>
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">图形码</label>
+                                <div class="fly-input-inline">
+                                    <input type="text" name="verify" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips" style="padding: 0!important;">
+                                    <img src="{:url('Index/verify')}" alt="图形码" class="fly-verify" onclick="this.src='{:url('Index/verify')}?' + Math.random()">
+                                </div>
+                            </div>
+                            <!--<div class="fly-form-item">-->
+                                <!--<label for="#" class="fly-form-label">验证码</label>-->
+                                <!--<div class="fly-input-inline">-->
+                                    <!--<input type="text" name="username" class="fly-input">-->
+                                <!--</div>-->
+                                <!--<div class="fly-input-tips" style="padding: 0!important;">-->
+                                    <!--<button class="fly-btn">获取验证码</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">昵称</label>
+                                <div class="fly-input-inline">
+                                    <input type="text" name="nick_name" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips">你在社区的名字 </div>
+                            </div>
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">密码</label>
+                                <div class="fly-input-inline">
+                                    <input type="password" name="password" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips"> 6到16个字符 </div>
+                            </div>
+                            <div class="fly-form-item">
+                                <label for="#" class="fly-form-label">确认密码</label>
+                                <div class="fly-input-inline">
+                                    <input type="password" name="repassword" class="fly-input">
+                                </div>
+                                <div class="fly-input-tips">  </div>
+                            </div>
+                            <div class="fly-form-item fly-form-select">
+                                <input type="checkbox" name="confirm" id="confirm">
+                                <span class="confirm" class="checked"></span>
+                                <a href="javascript:void(0)" style="position: relative; top: -2px; left: 5px; color: #999;padding-left:10px;">同意用户服务条款</a>
+                            </div>
+                            <div class="fly-form-item">
+                                <button class="fly-btn">立即注册</button>
+                            </div>
+
+                            <div class="fly-form-item fly-form-app">
+                                <span>或者使用社交账号登入</span>
+                                <a href="#" class="icon-wechart"><span class="icon iconfont">&#xe65d;</span></a>
+                                <a href="#" class="icon-qq"><span class="icon iconfont">&#xe600;</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fly-footer">
+    <p>
+        <a href="#">Fly 团队</a>
+        &copy; 2019
+        <a href="#">www.tydexp.cn</a>
+    </p>
+</div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+
+    //模拟CheckBox
+    $(".confirm").click(function () {
+        //判断CheckBox值
+        var isChecked = $("#confirm").attr('checked');
+        if(isChecked === undefined) {
+            $("#confirm").attr('checked',true);
+            $(".fly-form-item span").addClass("checked")
+        } else if(isChecked === "checked"){
+            $("#confirm").attr('checked',false);
+            $(".fly-form-item span").removeClass("checked")
+        }
+    })
+
+    //提交验证
+    $("#register").submit(function (e) {
+
+        //手机号为空验证 || 图形码为空验证 ||昵称为空验证
+        if($(this).find("input[name='mobile']").val() == '' || $(this).find("input[name='verify']").val() == '' || $(this).find("input[name='nick_name']").val() == '') {
+            alert("请填写完整的资料");
+            return false;
+        }
+
+        //6到12位验证
+        var rule = "^[0-9a-zA-Z]{6,12}$";
+        var re = new RegExp(rule);
+        var password = $(this).find("input[name='password']").val();
+        if(!re.test(password)) {
+            alert("请输入6-12位密码");
+            $(this).find("input[name='password']").val('');
+            return false;
+        }
+
+        //密码和重复密码一致
+        if($(this).find("input[name='password']").val() !== $(this).find("input[name='repassword']").val()) {
+            alert("两次输入不一致");
+            $(this).find("input[name='repassword']").val('');
+            return false;
+        }
+
+        //同意服务条款
+        if(!$(this).find("input[name='confirm']").prop('checked')) {
+            alert("请同意服务条款");
+            return false;
+        }
+
+        return true;
+    })
+
+</script>
+</body>
+</html>
